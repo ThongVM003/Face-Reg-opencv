@@ -10,6 +10,6 @@ This program will regconize people when their entire faces when they are facing 
 
 ## Example
 
-[resutls1.png]
+![alt.text](results1.png)
 
-[resultes2.png
+![alt.text](results2.png)
