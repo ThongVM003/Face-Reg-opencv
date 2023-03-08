@@ -6,7 +6,7 @@ For school
 # Preview
 ## TESTING: Run meomeo.py
 
-This program will regconize people when their entire faces when they are facing directly to the camera. Currently only regconize 6 people. If you are not in the database, it will show as "Unknown"
+This program will regconize people when their entire faces are facing directly to the camera. Currently only regconize 6 people. If you are not in the database, it will show as "Unknown"
 
 ## Example
 
