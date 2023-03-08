@@ -1,7 +1,5 @@
-# This script will detect faces via your webcam.
-# Tested with OpenCV3
-
 import cv2
+import datetime
 
 cap = cv2.VideoCapture(0)
 
@@ -26,7 +24,7 @@ while True:
         # flags = cv2.CV_HAAR_SCALE_IMAGE
     )
 
-    print("Found {0} faces!".format(len(faces)))
+    # print("Found {0} faces!".format(len(faces)))
 
     # Draw a rectangle around the faces
     for (x, y, w, h) in faces:
@@ -47,6 +45,11 @@ while True:
     cv2.imshow('frame', frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+    elif cv2.waitKey(1) % 256 == 32:
+        # SPACE pressed
+        img_name = f"""{datetime.datetime.utcnow().strftime('%d-%m-%Y-%H-%M-%S')}.png"""
+        print(img_name)
+        cv2.imwrite(img_name, frame)
 
 # When everything done, release the capture
 cap.release()

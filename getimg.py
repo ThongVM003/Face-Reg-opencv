@@ -1,3 +1,4 @@
+import datetime
 import os
 
 
@@ -19,4 +20,6 @@ def main():
 # Driver Code
 if __name__ == '__main__':
     # Calling main() function
-    main()
+    # main()
+    import time
+    print(datetime.datetime.utcnow().strftime("%d-%m-%Y-%H:%M:%S"))
